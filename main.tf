@@ -30,7 +30,7 @@ module "vpc" {
   tags = var.vpc_tags
 }
 
-module "ec2_instance" {
+module "ec2_instances" {
   source  = "terraform-aws-modules/ec2-instance/aws"
   version = "2.12.0"
 
