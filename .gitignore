@@ -1,0 +1,8 @@
+## terrafor
+.terraform
+
+## vscode
+*.code-workspace
+
+## Mac
+.DS_Store
