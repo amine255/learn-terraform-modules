@@ -47,3 +47,14 @@ module "ec2_instances" {
     Environment = "dev"
   }
 }
+
+module "website_s3_bucket" {
+  source = "./modules/aws-s3-static-website-bucket"
+
+  bucket_name = "amine255-bucket"
+
+  tags = {
+    terraform   = "true"
+    Environment = "dev"
+  }
+}
